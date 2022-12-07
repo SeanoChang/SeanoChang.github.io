@@ -4,7 +4,7 @@ import {AiFillGithub} from 'react-icons/ai';
 
 export default function Footer(){
     return (
-        <div className="flex flex-row justify-center h-1/5 w-full py-12">
+        <div className="flex flex-row justify-center h-1/5 w-full py-12 bg-stone-100 dark:bg-stone-900">
             <footer className="flex flex-col w-full items-center">
                 <div className="flex flex-row justify-around w-1/2 py-6">
                     <a href="mailto:seanooochang755@outlook.com" className="cursor-pointer"><IoMailOutline className="text-4xl hover:scale-105"/></a>

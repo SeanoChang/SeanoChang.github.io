@@ -2,7 +2,7 @@ import React from 'react';
 
 export const About: React.FC = () => {
     return(
-        <div id="about" className="flex flex-col justify-left shadow-xl rounded-xl p-6 transition hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
+        <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300 ">
             <div className="font-bold text-4xl pb-8">About...</div>
             <div className="flex flex-col pb-4">
                 <div className="flex flex-row justify-between py-4">

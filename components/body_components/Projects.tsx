@@ -76,18 +76,17 @@ class Projects extends React.Component<{expand: boolean, handleExpand: any}, any
                     <div className="font-bold text-3xl" key={key1.toString()}>{i.language}</div>
                     {i.projects.map((j: any, key2:number) => {
                         return(
-                            <div className="flex flex-col pb-4 py-4" key={key2.toString()}>
-                            <div className="flex flex-row text-2xl" key={key2.toString()}>
-                                <span className="w-3/4">{j.name}</span>
-                                <span className="text-right w-1/4 italic">{j.date}</span>
+                            <div className="flex flex-col pb-4 py-4 px-4" key={key2.toString()}>
+                                <div className="flex flex-row text-2xl" key={key2.toString()}>
+                                    <span className="w-3/4">{j.name}</span>
+                                    <span className="text-right w-1/4 italic">{j.date}</span>
+                                </div>
+                                <ul className="list-disc p-6">
+                                    {j.description.map((k: string) => {
+                                        return <li className="text-xl w-3/4" key={k}>{k}</li>
+                                    })}
+                                </ul>
                             </div>
-                            <ul className="list-disc p-6">
-                                {j.description.map((k: string) => {
-                                    return <li className="text-xl" key={k}>{k}</li>
-
-                                })}
-                            </ul>
-                        </div>
                         )
                     })}
                 </div>
@@ -95,7 +94,7 @@ class Projects extends React.Component<{expand: boolean, handleExpand: any}, any
         });
 
         return(
-            <div id="projects" className="flex flex-col justify-left shadow-xl rounded-xl p-6 transition hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
+            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
                 <div className="font-bold text-4xl pb-8">Projects...</div>
                 {this.props.expand ? projects_list : null}
                 <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>

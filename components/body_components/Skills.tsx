@@ -29,16 +29,16 @@ let skills_list = [
         "skill": "Frameworks",
         "list": [
             {
-                "name": "React.js",
-                "time": "6 months"
-            },
-            {
                 "name": "Node.js",
                 "time": "6 months"
             },
             {
                 "name": "Express.js",
                 "time": "6 months"
+            },
+            {
+                "name": "React.js",
+                "time": "3 months"
             },
             {  
                 "name": "Next.js",
@@ -63,12 +63,12 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
     render(){
         const skills_list = this.state.skills.map((i: any) => {
             return (
-                <div className="flex flex-col py-8 px-4">
-                    <div className="font-bold text-2xl">{i.skill}</div>
+                <div className="flex flex-col py-8 px-4" key={i.id}>
+                    <div className="font-bold text-2xl" key={i.id}>{i.skill}</div>
                     <div className="flex flex-col text-xl px-4 py-6">
-                        {i.list.map((j: any, key:number) => {
+                        {i.list.map((j: any) => {
                             return (
-                                <div className="flex flex-row text-xl py-4" key={key}>
+                                <div className="flex flex-row text-xl py-4" key={j.id}>
                                     <span className="text-left w-3/4">{j.name}</span>
                                     <span className="text-right w-1/4 italic">{j.time}</span>
                                 </div>
@@ -79,7 +79,7 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
             )
         });
         return(
-            <div id="skills" className="flex flex-col justify-left shadow-xl rounded-xl p-6 transition hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
+            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
                 <div className="font-bold text-4xl pb-8">Skills...</div>
                 {this.props.expand ? skills_list : null}
                 <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>

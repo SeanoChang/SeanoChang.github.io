@@ -40,15 +40,16 @@ class Body extends React.Component<any,any> {
 
     render(){
         return (
-            <div className="flex flex-col justify-between items-left justify-left w-3/5 mx-auto">
+            <div className="flex flex-col justify-between items-left justify-left w-1/2 mx-auto">
+                <Space id="about"/>
                 <About/>
-                <Space/>
+                <Space id="skills"/>
                 <Skills expand={this.state.Skills} handleExpand={this.handleExpandSkills}/>
-                <Space/>
+                <Space id="projects"/>
                 <Projects expand={this.state.Projects} handleExpand={this.handleExpandProjects}/>
-                <Space/>
+                <Space id="experience"/>
                 <Experience expand={this.state.Experience} handleExpand={this.handleExpandExperience}/>
-                <Space/>
+                <Space id="hobby"/>
                 <Hobby/>
             </div>
         )
