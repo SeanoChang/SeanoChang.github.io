@@ -65,7 +65,7 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
             return (
                 <div className="flex flex-col py-8 px-4" key={i.id}>
                     <div className="font-bold text-2xl" key={i.id}>{i.skill}</div>
-                    <div className="flex flex-col text-xl px-4 py-6">
+                    <div className="flex flex-col text-xl px-4 py-6" key={i.id}>
                         {i.list.map((j: any) => {
                             return (
                                 <div className="flex flex-row text-xl py-4" key={j.id}>

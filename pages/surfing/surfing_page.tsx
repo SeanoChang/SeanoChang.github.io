@@ -11,14 +11,16 @@ export default function SurfingPage() {
                 <title>Yi Hsiang Chang - Surfing</title>
                 <meta name="description" content="Yi Hsiang Chang Surfing Page" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta charSet='utf-8' />
             </Head>
             <main className="w-screen h-screen bg-gradient-to-b from-[#420355] via-[#CD113B] to-[#FF7600]">
                 <div className="flex flex-col justify-center items-center relatvie w-full h-full pb-20 text-[#e2dfce]">
                     <span className="flex flex-col justify-center h-1/4 items-center"><h1 className="text-8xl text-center">Surfing</h1></span>
                     <section className="flex flex-col justify-center items-center relative w-full h-3/4">
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            Started surfing when I was at the first year of college. Due to covid, I hadn't been able to travel to the state.
-                            However, I met some friends through the a program from a college in Taiwan and we went to surf on one weekend.
+                            Started surfing when I was at the first year of college. Although, due to covid, I hadn't been able to travel to the state,
+                            I met some great friend through a program for international students in TsinHua University. One day, someone had an idea
+                            to take a trip to Yilan for surfing, and with the thought of giving surfing a try, I went with them.
                         </p>
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
                             The first time I went to surf, I had such a great time. The condition of the wave was so good and beginner friendly, and 
@@ -26,14 +28,15 @@ export default function SurfingPage() {
                             the wind, and the water. At that moment, I knew that I was going to addicted to surfing.
                         </p>
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            In the next summer, I went to do an part-time coach in Pirate Surf, which is one of the local surf shop in Yilan, Taiwan, 
+                            In the next summer, I went to do an part&ndash;time coach in Pirate Surf, which is one of the local surf shop in Yilan, Taiwan, 
                             and I was able to teach some beginners how to surf. Got immersed in the surfing vibe and the community of surfing, I was able
                             to meet a lot of great local surfers and learn from them. Gradually, I was able improve my surfing techniques a lot.
                         </p>
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            After I went to the US, due to my school's location, I wan't able to surf at all. However, my friends and I took a trip to 
-                            California and we went surfing in the great Huntington Beach, aka the Surf City. I even bought my first board and first shortboard, 
-                            which was a SharpEye storm. However shortboard surfing is a lot harder than longboard surfing, so I didn't manage to surf a single wave.
+                            After I went to the US, due to my school's location, I wasn&rsquo;t able to surf at all. However, my friends and I took a trip to 
+                            California and we went surfing in the great Huntington Beach, aka the Surf City. I even bought my first shortboard, which is a SharpEye storm, 
+                            at Huntington Beach. However shortboard surfing is a lot harder than longboard surfing, so I didn&rsquo;t manage to surf a single wave during
+                            the trip in Orange County.
                         </p>
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
                             Summer 2022, I went back to Yilan and I start to surf with smaller wave conditions. The gentler wave allowed me to practice catching waves
