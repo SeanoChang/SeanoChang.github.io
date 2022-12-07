@@ -18,7 +18,7 @@ export default function SurfingPage() {
                     <span className="flex flex-col justify-center h-1/4 items-center"><h1 className="text-8xl text-center">Surfing</h1></span>
                     <section className="flex flex-col justify-center items-center relative w-full h-3/4">
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            Started surfing when I was at the first year of college. Although, due to covid, I hadn't been able to travel to the state,
+                            Started surfing when I was at the first year of college. Although, due to covid, I hadn&rsquo;t been able to travel to the state,
                             I met some great friend through a program for international students in TsinHua University. One day, someone had an idea
                             to take a trip to Yilan for surfing, and with the thought of giving surfing a try, I went with them.
                         </p>
@@ -33,7 +33,7 @@ export default function SurfingPage() {
                             to meet a lot of great local surfers and learn from them. Gradually, I was able improve my surfing techniques a lot.
                         </p>
                         <p className="text-2xl w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            After I went to the US, due to my school's location, I wasn&rsquo;t able to surf at all. However, my friends and I took a trip to 
+                            After I went to the US, due to my school&rsquo;s location, I wasn&rsquo;t able to surf at all. However, my friends and I took a trip to 
                             California and we went surfing in the great Huntington Beach, aka the Surf City. I even bought my first shortboard, which is a SharpEye storm, 
                             at Huntington Beach. However shortboard surfing is a lot harder than longboard surfing, so I didn&rsquo;t manage to surf a single wave during
                             the trip in Orange County.
