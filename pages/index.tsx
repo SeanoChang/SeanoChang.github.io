@@ -20,7 +20,7 @@ export default function Home() {
         <title>Seano Chang</title>
         <meta name="description" content="Sean Chang Personal Website" />
       </Head>
-      <div className="w-screen min-h-screen shadow-stone-400 text-stone-800 dark:shadow-stone-600 dark:text-stone-300">
+      <div className="w-screen min-h-screen shadow-stone-400 text-stone-800 dark:shadow-stone-600 dark:text-stone-300 ">
         <NavBar dark={darkMode} setDark={handleDarkMode}/>
         <main id="home" className="w-full bg-stone-200  dark:bg-stone-800 pb-16">
           <Header />
