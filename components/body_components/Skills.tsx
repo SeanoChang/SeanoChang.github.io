@@ -9,19 +9,35 @@ let skills_list = [
         "list": [
             {
                 "name": "C/C++",
-                "time": "2 years"
+                "time": "Fluent"
             },
             {
                 "name": "Python",
-                "time": "1 year"
+                "time": "Fluent"
             },
             {
                 "name": "JavaScript",
-                "time": "1 year"
+                "time": "Fluent"
+            },
+            {
+                "name": "TypeScript",
+                "time": "Intermediate"
             },
             {
                 "name": "HTML/CSS",
-                "time": "1 year"
+                "time": "Intermediate"
+            },
+            {
+                "name": "Java",
+                "time": "Intermediate"
+            },
+            {
+                "name": "Solidity",
+                "time": "Intermediate"
+            },
+            {
+                "name": "swift",
+                "time": "Intermediate"
             }
         ]    
     },
@@ -46,6 +62,10 @@ let skills_list = [
             },
             {
                 "name": "Tailwind CSS",
+                "time": "1 month"
+            },
+            {
+                "name": "web3.js",
                 "time": "1 month"
             }
         ]
