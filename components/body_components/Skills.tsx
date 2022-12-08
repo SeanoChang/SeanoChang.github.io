@@ -81,16 +81,16 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
     }
 
     render(){
-        const skills_list = this.state.skills.map((i: any) => {
+        const skills_list = this.state.skills.map((i: {skill:string, list:{name:string, time:string}[]}, index: number) => {
             return (
-                <div className="flex flex-col py-2 lg:py-8 px-3 lg:px-5" key={i.id}>
-                    <div className="font-bold text-base lg:text-2xl" key={i.id}>{i.skill}</div>
-                    <div className="flex flex-col px-3 lg:px-6 py-2 lg:py-6" key={i.id}>
-                        {i.list.map((j: any) => {
+                <div className="flex flex-col py-2 lg:py-8 px-3 lg:px-5" key={index}>
+                    <div className="font-bold text-base lg:text-2xl" key={i.skill}>{i.skill}</div>
+                    <div className="flex flex-col px-3 lg:px-6 py-2 lg:py-6" key={index.toString() + "list"}>
+                        {i.list.map((j: {name:string, time:string}, index:number) => {
                             return (
-                                <div className="flex flex-row py-4" key={j.id}>
-                                    <span className="text-left text-sm lg:text-xl w-1/2 lg:w-3/4">{j.name}</span>
-                                    <span className="text-right text-xs lg:text-base w-1/2 lg:w-1/4 italic">{j.time}</span>
+                                <div className="flex flex-row py-4" key={index}>
+                                    <span className="text-left text-sm lg:text-xl w-1/2 lg:w-3/4" key={j.name}>{j.name}</span>
+                                    <span className="text-right text-xs lg:text-base w-1/2 lg:w-1/4 italic" key={j.time}>{j.time}</span>
                                 </div>
                             )
                         })}

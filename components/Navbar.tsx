@@ -45,11 +45,11 @@ const NavBar = (props:{dark: boolean, setDark: any}): JSX.Element => {
     return (
         <div className={`flex flex-row items-center w-full h-16 z-10 sticky top-0 transition duration-150 bg-stone-200 dark:bg-stone-800 shadow-inherit ${!shadow? '': 'shadow-lg'}`}>
             <div className="h-full lg:w-1/5"></div>
-            <div className="flex flex-row items-center justify-around h-full w-5/6 lg:w-3/5">
+            <div className="flex flex-row items-center justify-around h-full w-[90%] lg:w-3/5">
                 {links}
             </div>
-            <div className="flex flex-row justify-center items-center h-full w-1/6 lg:w-1/5">
-                <div className="text-xl lg:text-3xl hover:cursor-pointer" onClick={props.setDark}>
+            <div className="flex flex-row justify-center items-center h-full w-[10%] lg:w-1/5">
+                <div className="text-base lg:text-3xl hover:cursor-pointer" onClick={props.setDark}>
                     {props.dark? <BiMoon /> : <BiSun/>}
                 </div>
             </div>
