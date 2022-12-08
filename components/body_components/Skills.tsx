@@ -83,14 +83,14 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
     render(){
         const skills_list = this.state.skills.map((i: any) => {
             return (
-                <div className="flex flex-col py-8 px-4" key={i.id}>
-                    <div className="font-bold text-2xl" key={i.id}>{i.skill}</div>
-                    <div className="flex flex-col text-xl px-4 py-6" key={i.id}>
+                <div className="flex flex-col py-2 lg:py-8 px-3 lg:px-5" key={i.id}>
+                    <div className="font-bold text-base lg:text-2xl" key={i.id}>{i.skill}</div>
+                    <div className="flex flex-col px-3 lg:px-6 py-2 lg:py-6" key={i.id}>
                         {i.list.map((j: any) => {
                             return (
-                                <div className="flex flex-row text-xl py-4" key={j.id}>
-                                    <span className="text-left w-3/4">{j.name}</span>
-                                    <span className="text-right w-1/4 italic">{j.time}</span>
+                                <div className="flex flex-row py-4" key={j.id}>
+                                    <span className="text-left text-sm lg:text-xl w-1/2 lg:w-3/4">{j.name}</span>
+                                    <span className="text-right text-xs lg:text-base w-1/2 lg:w-1/4 italic">{j.time}</span>
                                 </div>
                             )
                         })}
@@ -99,11 +99,11 @@ class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> 
             )
         });
         return(
-            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
-                <div className="font-bold text-4xl pb-8">Skills...</div>
+            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-2 lg:p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
+                <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-2 md:py-4">Skills...</div>
                 {this.props.expand ? skills_list : null}
                 <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>
-                    {this.props.expand ? <BiChevronUp className="motion-safe:animate-bounce text-4xl"/> : <BiChevronDown className="motion-safe:animate-bounce text-4xl"/> }
+                    {this.props.expand ? <BiChevronUp className="motion-safe:animate-bounce text-2xl lg:text-4xl"/> : <BiChevronDown className="motion-safe:animate-bounce text-4xl"/> }
                 </div>
             </div>
         )

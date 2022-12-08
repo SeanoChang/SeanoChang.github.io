@@ -72,18 +72,18 @@ class Projects extends React.Component<{expand: boolean, handleExpand: any}, any
     render() {
         const projects_list = this.state.projects.map((i: any, key1: number) => {
             return (
-                <div className="flex flex-col py-8 px-4" key={key1.toString()}>
-                    <div className="font-bold text-3xl" key={key1.toString()}>{i.language}</div>
+                <div className="flex flex-col py-4 lg:py-8 px-2 lg:px-5" key={key1.toString()}>
+                    <div className="font-bold text-xl lg:text-3xl" key={key1.toString()}>{i.language}</div>
                     {i.projects.map((j: any, key2:number) => {
                         return(
-                            <div className="flex flex-col pb-4 py-4 px-4" key={key2.toString()}>
-                                <div className="flex flex-row text-2xl" key={key2.toString()}>
-                                    <span className="w-3/4">{j.name}</span>
-                                    <span className="text-right w-1/4 italic">{j.date}</span>
+                            <div className="flex flex-col py-2 px-3 lg:py-4 lg:px-6" key={key2.toString()}>
+                                <div className="flex flex-row text-sm lg:text-2xl" key={key2.toString()}>
+                                    <span className="w-1/2 lg:w-3/4">{j.name}</span>
+                                    <span className="text-right w-1/2 lg:w-1/4 italic">{j.date}</span>
                                 </div>
-                                <ul className="list-disc p-6">
+                                <ul className="list-disc py-2 px-4 lg:py-4 lg:px-8">
                                     {j.description.map((k: string) => {
-                                        return <li className="text-xl w-3/4" key={k}>{k}</li>
+                                        return <li className="text-xs lg:text-xl w-full lg:w-3/4" key={k}>{k}</li>
                                     })}
                                 </ul>
                             </div>
@@ -94,8 +94,8 @@ class Projects extends React.Component<{expand: boolean, handleExpand: any}, any
         });
 
         return(
-            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
-                <div className="font-bold text-4xl pb-8">Projects...</div>
+            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-2 lg:p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
+                <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-2 md:py-4">Projects...</div>
                 {this.props.expand ? projects_list : null}
                 <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>
                     {this.props.expand ? <BiChevronUp className="motion-safe:animate-bounce text-4xl"/> : <BiChevronDown className="motion-safe:animate-bounce text-4xl"/> }

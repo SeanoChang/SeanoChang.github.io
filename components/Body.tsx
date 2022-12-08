@@ -40,7 +40,7 @@ class Body extends React.Component<any,any> {
 
     render(){
         return (
-            <div className="flex flex-col justify-between items-left justify-left w-1/2 mx-auto">
+            <div className="flex flex-col justify-between items-left justify-left w-3/5 sm:w-1/2 mx-auto">
                 <Space id="about"/>
                 <About/>
                 <Space id="skills"/>
