@@ -19,29 +19,35 @@ export default function SurfingPage() {
                     <div  className="flex flex-col justify-center items-center relative w-full">
                         <p className="text-sm sm:text-base lg:text-2xl w-5/6 sm:w-3/4 lg:w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
                             Started surfing when I was at the first year of college. Although, due to covid, I hadn&rsquo;t been able to travel to the states,
-                            I met some great friend through a program for international students in TsinHua University. One day, someone had an idea
-                            to take a trip to Yilan for surfing, and with the thought of giving surfing a try, I went with them.
+                            I met some great friends through a program for international students in TsinHua University. One day, someone had an idea
+                            to take a trip to Yilan for surfing, and with the thought of giving surfing a try, my journey for surfing started since then.
                         </p>
                         <p className="text-sm sm:text-base lg:text-2xl w-5/6 sm:w-3/4 lg:w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
                             The first time I went to surf, I had such a great time. The condition of the wave was so good and beginner friendly, and 
-                            I was able to catch a lot of waves. I could recall the first time I stood up from the surfboard and the feeling of the speed,
-                            the wind, and the water. At that moment, I knew that I was going to addicted to surfing.
+                            I finally caught a wave after 2 hours of falling off the board. I could recall the first time I stood up from the surfboard 
+                            and the feeling of the speed, the wind, and the water. At that moment, I knew that I was addicted to surfing.
                         </p>
                         <p className="text-sm sm:text-base lg:text-2xl w-5/6 sm:w-3/4 lg:w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
                             In the next summer, I went to do an part&ndash;time coach in Pirate Surf, which is one of the local surf shop in Yilan, Taiwan, 
-                            and I was able to teach some beginners how to surf. Got immersed in the surfing vibe and the community of surfing, I was able
-                            to meet a lot of great local surfers and learn from them. Gradually, I was able improve my surfing techniques a lot.
+                            and I was able to teach some beginners how to surf. Got immersed in the surfing vibe and the community of surfing, I met a lot 
+                            of great local surfers and other part-time/full-time coaches. By learning surfing concepts and techniques from them and compete
+                            with them, I managed improve my surfing a lot during that period of time.
                         </p>
                         <p className="text-sm sm:text-base lg:text-2xl w-5/6 sm:w-3/4 lg:w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            After I went to the US, due to my school&rsquo;s location, I wasn&rsquo;t able to surf at all. However, my friends and I took a trip to 
-                            California and we went surfing in the great Huntington Beach, aka the Surf City. I even bought my first shortboard, which is a SharpEye storm, 
-                            at Huntington Beach. However shortboard surfing is a lot harder than longboard surfing, so I didn&rsquo;t manage to surf a single wave during
-                            the trip in Orange County.
+                            After I went to the US, due to my school&rsquo;s location, Indiana, USA, I wasn&rsquo;t able to surf at all. However, my friends and I took 
+                            a trip to California during winter break and we went surfing in the great Huntington Beach, aka the Surf City. Even though the weather and water
+                            was so cold, it couldn&rsquo;t stop my fire of passion for surfing. I even bought my first shortboard, which is a SharpEye storm, 
+                            at Huntington Beach&rsquo;s surf shop. However shortboard surfing is a lot harder than longboard surfing, so I didn&rsquo;t manage to surf a 
+                            single wave during the stay in Orange County. Came back to school, I was still surfing in my mind and during the my dreams, and I was looking 
+                            forward to the next time a could go surfing.
                         </p>
                         <p className="text-sm sm:text-base lg:text-2xl w-5/6 sm:w-3/4 lg:w-1/2 p-8 text-justify indent-8 antialiased tracking-tight">
-                            Summer 2022, I went back to Yilan and I start to surf with smaller wave conditions. The gentler wave allowed me to practice catching waves
-                            since we had to paddle a lot lol, also that I could practice my surfing techniques without the fear of getting hurt. I improved so much during
-                            the one month stay in Yilan.
+                            Summer 2022 came, and I went back to Yilan for being the part-time coach. The gentler summer waves allowed me to practice catching waves
+                            and to surf without the fear of getting hurt or slammed by the waves. I improved so much during the time. Due to the mushy waves, my paddling
+                            techniques improved significantly, in order to catch a wave obviously. Also, due to the forgiving condition, I was able to practice my surfing
+                            skills, such as popping up and turning, which is still a work in progess and my postures was ugly af lol. Not only did I improved my surfing,
+                            I made some great friends and memories. Happy time always went by so fast, and I had to say goodbye to my friends and surfing once the summer
+                            break was coming to an end. Looking forward to the next time I can go surfing again. See you in the water... peace
                         </p>
                     </div>
                 </div>  
