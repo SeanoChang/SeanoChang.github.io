@@ -48,7 +48,7 @@ export const Hobby = () : JSX.Element => {
             return (
                 <div className="flex flex-row justify-center py-4" key={key.toString()}>
                     <span className="text-xl md:text-2xl lg:text-3xl pr-2">{hobby.icon}</span>
-                    <span className="text-base md:text-xl lgtext-2xl">{hobby.name}</span>
+                    <span className="text-base md:text-xl lg:text-2xl">{hobby.name}</span>
                 </div>
             )
         }

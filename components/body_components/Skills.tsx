@@ -20,11 +20,11 @@ let skills_list = [
                 "time": "Fluent"
             },
             {
-                "name": "TypeScript",
-                "time": "Intermediate"
+                "name": "HTML/CSS",
+                "time": "Fluent"
             },
             {
-                "name": "HTML/CSS",
+                "name": "TypeScript",
                 "time": "Intermediate"
             },
             {
@@ -36,7 +36,7 @@ let skills_list = [
                 "time": "Intermediate"
             },
             {
-                "name": "swift",
+                "name": "Swift",
                 "time": "Intermediate"
             }
         ]    
@@ -62,10 +62,6 @@ let skills_list = [
             },
             {
                 "name": "Tailwind CSS",
-                "time": "1 month"
-            },
-            {
-                "name": "web3.js",
                 "time": "1 month"
             }
         ]
