@@ -64,6 +64,7 @@ export const Hobby = (): JSX.Element => {
             <a
               href="https://trading-journal-page-3q7d.vercel.app/"
               target="_blank"
+              rel="noreferrer"
               className="pr-2 group flex flex-row justify-center"
             >
               <span className="text-xl md:text-2xl lg:text-3xl group-hover:text-[#ff7600] pr-2">

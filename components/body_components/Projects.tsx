@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import HoveringText from "../general/HoveringText";
+import { useInView } from "framer-motion";
 
 type Project = {
   name: string;
@@ -70,11 +71,24 @@ const TypescriptProject: Project[] = [
 ];
 
 const ProjectItem = (props: { project: Project }): JSX.Element => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    once: true,
+  });
+
   // get the descriptions of the project
   const descriptions = props.project.description.map((description, index) => {
     return (
-      <li key={index}>
-        <span>{description}</span>
+      <li key={index} ref={ref}>
+        <span
+          style={{
+            opacity: isInView ? 1 : 0,
+
+            transition: "opacity 1s ease-in-out",
+          }}
+        >
+          {description}
+        </span>
       </li>
     );
   });
