@@ -1,109 +1,149 @@
-import React from 'react';
-import { BiChevronDown } from "react-icons/bi";
-import { BiChevronUp } from "react-icons/bi";
+import React from "react";
+import { useInView } from "framer-motion";
+import HoveringText from "../general/HoveringText";
 
+type Skill = {
+  skill: string;
+  fluency: number;
+};
 
-let skills_list = [
-    {
-        "skill": "Programming Languages",
-        "list": [
-            {
-                "name": "C/C++",
-                "time": "Fluent"
-            },
-            {
-                "name": "Python",
-                "time": "Fluent"
-            },
-            {
-                "name": "JavaScript",
-                "time": "Fluent"
-            },
-            {
-                "name": "HTML/CSS",
-                "time": "Fluent"
-            },
-            {
-                "name": "TypeScript",
-                "time": "Intermediate"
-            },
-            {
-                "name": "Java",
-                "time": "Intermediate"
-            },
-            {
-                "name": "Solidity",
-                "time": "Intermediate"
-            },
-            {
-                "name": "Swift",
-                "time": "Intermediate"
-            }
-        ]    
-    },
-    {
-        "skill": "Frameworks",
-        "list": [
-            {
-                "name": "Node.js",
-                "time": "6 months"
-            },
-            {
-                "name": "Express.js",
-                "time": "6 months"
-            },
-            {
-                "name": "React.js",
-                "time": "3 months"
-            },
-            {  
-                "name": "Next.js",
-                "time": "2 months"
-            },
-            {
-                "name": "Tailwind CSS",
-                "time": "1 month"
-            }
-        ]
-    }
-]
+const Languages: Skill[] = [
+  {
+    skill: "C/C++",
+    fluency: 80,
+  },
+  {
+    skill: "Python",
+    fluency: 80,
+  },
+  {
+    skill: "JavaScript",
+    fluency: 90,
+  },
+  {
+    skill: "HTML/CSS",
+    fluency: 70,
+  },
+  {
+    skill: "TypeScript",
+    fluency: 70,
+  },
+  {
+    skill: "Java",
+    fluency: 50,
+  },
+  {
+    skill: "Solidity",
+    fluency: 30,
+  },
+  {
+    skill: "Swift",
+    fluency: 40,
+  },
+  {
+    skill: "Rust",
+    fluency: 20,
+  },
+];
 
-class Skills extends React.Component<{expand: boolean, handleExpand: any}, any> {
-    constructor(props: any){
-        super(props);
-        this.state = {
-            skills: skills_list
-        }
-    }
+const Frameworks: Skill[] = [
+  {
+    skill: "Node.js",
+    fluency: 50,
+  },
+  {
+    skill: "Express.js",
+    fluency: 50,
+  },
+  {
+    skill: "React.js",
+    fluency: 70,
+  },
+  {
+    skill: "Next.js",
+    fluency: 70,
+  },
+  {
+    skill: "Tailwind CSS",
+    fluency: 50,
+  },
+  {
+    skill: "Framer Motion",
+    fluency: 50,
+  },
+  {
+    skill: "Astro",
+    fluency: 20,
+  },
+  {
+    skill: "Svelte",
+    fluency: 10,
+  },
+];
 
-    render(){
-        const skills_list = this.state.skills.map((i: {skill:string, list:{name:string, time:string}[]}, index: number) => {
-            return (
-                <div className="flex flex-col py-2 lg:py-8 px-3 lg:px-5" key={index}>
-                    <div className="font-bold text-base lg:text-2xl" key={i.skill}>{i.skill}</div>
-                    <div className="flex flex-col px-3 lg:px-6 py-2 lg:py-6" key={index.toString() + "list"}>
-                        {i.list.map((j: {name:string, time:string}, index:number) => {
-                            return (
-                                <div className="flex flex-row py-4" key={index}>
-                                    <span className="text-left text-sm lg:text-xl w-1/2 lg:w-3/4" key={j.name}>{j.name}</span>
-                                    <span className="text-right text-xs lg:text-base w-1/2 lg:w-1/4 italic" key={j.time}>{j.time}</span>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            )
-        });
-        return(
-            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-2 lg:p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
-                <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-2 md:py-4">Skills...</div>
-                {this.props.expand ? skills_list : null}
-                <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>
-                    {this.props.expand ? <BiChevronUp className="motion-safe:animate-bounce text-2xl lg:text-4xl"/> : <BiChevronDown className="motion-safe:animate-bounce text-4xl"/> }
-                </div>
-            </div>
-        )
-    }
-}
+const SkillCard = (props: { skill: Skill }): JSX.Element => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, {
+    once: true,
+  });
+
+  return (
+    <div className="flex flex-row justify-between items-center w-full h-24 hover:bg-cyan-100 dark:hover:bg-cyan-900 hover:text-red-400 dark:hover:text-[#ff9f46] rounded-lg pr-10">
+      <div className="text-base sm:text-lg md:text-xl lg:text-2xl px-2 lg:px-4 py-2 m-8">
+        <HoveringText text={props.skill.skill} />
+      </div>
+      <div
+        className="bg-[#c1c1c1] dark:bg-[#9c9c9c] w-3/4 md:w-1/2 rounded my-4"
+        ref={ref}
+      >
+        <div
+          style={{
+            width: isInView ? `${props.skill.fluency}%` : "0%",
+            transition: "width 1s ease-in-out",
+          }}
+          className="bg-gradient-to-r from-[#d6ab36] to-[#ffdc89] dark:group-hover:bg-[#4287fd] h-2 rounded"
+        />
+      </div>
+    </div>
+  );
+};
+
+const Skills = (): JSX.Element => {
+  const language_list = Languages.map((language: Skill) => {
+    return (
+      <div key={language.skill}>
+        <SkillCard skill={language} />
+      </div>
+    );
+  });
+
+  const framework_list = Frameworks.map((framework: Skill) => {
+    return (
+      <div key={framework.skill}>
+        <SkillCard skill={framework} />
+      </div>
+    );
+  });
+
+  return (
+    <div className="flex flex-row justify-center items-center py-24">
+      <div className="flex flex-col justify-left w-11/12 sm:w-5/6 2xl:w-3/5 p-2 lg:p-6 dark:text-stone-300">
+        <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-2 md:py-4">
+          Skills...
+        </div>
+        <div className="flex flex-col">
+          <span className="m-8 text-xl lg:text-3xl font-semibold">
+            Languages
+          </span>
+          <div className="flex flex-col">{language_list}</div>
+          <span className="m-8 text-xl lg:text-3xl font-semibold">
+            Framework
+          </span>
+          <div className="flex flex-col">{framework_list}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Skills;

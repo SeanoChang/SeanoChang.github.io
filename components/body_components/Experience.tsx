@@ -1,45 +1,52 @@
-import React from 'react';
-import { BiChevronUp } from "react-icons/bi";
-import { BiChevronDown } from "react-icons/bi";
+import React from "react";
+import HoveringText from "../general/HoveringText";
 
-class Experience extends React.Component<{expand: boolean, handleExpand: any}, any> {
-    experiences: any = () => {
-        return (
-            <div className="flex flex-col">
-                <div className="flex flex-col">
-                    <div className="font-bold text-xl lg:text-3xl py-2 px-3 lg:py-6 lg:px-6">Teaching Assisatant</div>
-                    <div className="flex flex-col">
-                        <div className="flex flex-rol text-base lg:text-2xl px-4 lg:px-8">
-                            <span className="text-left w-1/2 lg:w-3/4">Data Structure and Algorithm</span>
-                            <span className="text-right w-1/2 lg:w-1/4 italic">Fall 2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col">
-                    <div className="font-bold text-xl lg:text-3xl py-2 lg:py-6 px-3 lg:px-6">Surf Shop</div>
-                    <div className="flex flex-col">
-                        <div className="flex flex-row text-base lg:text-2xl px-4 lg:px-8">
-                            <span className="text-left w-1/2 lg:w-3/4">Pirate Surf Coach</span>
-                            <span className="text-right w-1/2 lg:w-1/4 italic">May 2021, June 2022</span>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-        
+const Experiences = (): JSX.Element => {
+  const experiences: JSX.Element = (
+    <div className="flex flex-col">
+      <div className="flex flex-col">
+        <div className="font-bold text-xl lg:text-3xl py-2 px-3 lg:py-6 lg:px-6">
+          <HoveringText text="Teaching Assisatant" />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-rol text-base lg:text-xl px-4 lg:px-8">
+            <span className="text-left w-1/2 lg:w-3/4">
+              <HoveringText text="Data Structure and Algorithm" />
+            </span>
+            <span className="text-right w-1/2 lg:w-1/4 italic">
+              <HoveringText text="Fall 2022, Spring 2023" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col">
+        <div className="font-bold text-xl lg:text-3xl py-2 lg:py-6 px-3 lg:px-6">
+          <HoveringText text="Surf Shop" />
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-row text-base lg:text-xl px-4 lg:px-8">
+            <span className="text-left w-1/2 lg:w-3/4">
+              <HoveringText text="Pirate Surf Coach" />
+            </span>
+            <span className="text-right w-1/2 lg:w-1/4 italic">
+              <HoveringText text="May 2021, June 2022" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 
-    render(){
-        return(
-            <div className="flex flex-col justify-left shadow-inherit shadow-xl rounded-xl p-2 lg:p-6 transition dark:bg-stone-700 hover:shadow-inherit hover:-translate-y-1 hover:shadow-2xl hover:scale-105 duration-300">
-                <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-4">Work Experiences...</div>
-                {this.props.expand? this.experiences(): null}
-                <div className="mx-auto cursor-pointer" onClick={this.props.handleExpand}>
-                    {this.props.expand ? <BiChevronUp className="motion-safe:animate-bounce text-4xl"/> : <BiChevronDown className="motion-safe:animate-bounce text-4xl"/> }
-                </div>
-            </div>
-        )
-    }
-}
+  return (
+    <div className="flex flex-row justify-center items-center py-24 min-h-[50vh]">
+      <div className="flex flex-col justify-left rounded-xl p-2 lg:p-6 transitionduration-150 w-11/12 sm:w-5/6 2xl:w-3/5 dark:text-stone-300">
+        <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-4">
+          Work Experiences...
+        </div>
+        {experiences}
+      </div>
+    </div>
+  );
+};
 
-export default Experience;
+export default Experiences;
