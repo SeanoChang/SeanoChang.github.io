@@ -38,7 +38,10 @@ const Experiences = (): JSX.Element => {
   );
 
   return (
-    <div className="flex flex-row justify-center items-center py-24 min-h-[50vh]">
+    <div
+      className="flex flex-row justify-center items-center py-24 min-h-[50vh]"
+      id="experience"
+    >
       <div className="flex flex-col justify-left rounded-xl p-2 lg:p-6 transitionduration-150 w-11/12 sm:w-5/6 2xl:w-3/5 dark:text-stone-300">
         <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-4">
           Work Experiences...

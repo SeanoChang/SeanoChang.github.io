@@ -94,7 +94,10 @@ export const Hobby = (): JSX.Element => {
   );
 
   return (
-    <div className="flex flex-row justify-center items-center py-24 min-h-[50vh]">
+    <div
+      className="flex flex-row justify-center items-center py-24 min-h-[50vh]"
+      id="hobby"
+    >
       <div className="flex flex-col justify-left items-center p-2 md:p-6 w-11/12 sm:w-5/6 2xl:w-3/5 rounded-lg transition duration-150">
         <div className="px-2 lg:px-4 py-2 lg:py-4 w-full">
           <span className="text-2xl font-bold md:text-3xl lg:text-4xl">

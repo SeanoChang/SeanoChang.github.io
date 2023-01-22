@@ -3,7 +3,10 @@ import HoveringText from "../general/HoveringText";
 
 export const About: React.FC = () => {
   return (
-    <div className="flex flex-row justify-center items-center py-24 min-h-screen ">
+    <div
+      className="flex flex-row justify-center items-center py-24 min-h-screen "
+      id="about"
+    >
       <div className="flex flex-col justify-left p-2 lg:p-6  w-11/12 sm:w-5/6 2xl:w-3/5 rounded-lg hover:bg-cyan-100 dark:hover:bg-cyan-900 transition duration-150">
         <div className="font-bold text-3xl lg:text-4xl px-2 lg:px-4 py-4">
           About...

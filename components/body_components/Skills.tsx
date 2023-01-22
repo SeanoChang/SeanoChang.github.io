@@ -126,7 +126,10 @@ const Skills = (): JSX.Element => {
   });
 
   return (
-    <div className="flex flex-row justify-center items-center py-24">
+    <div
+      className="flex flex-row justify-center items-center py-24"
+      id="skills"
+    >
       <div className="flex flex-col justify-left w-11/12 sm:w-5/6 2xl:w-3/5 p-2 lg:p-6 dark:text-stone-300">
         <div className="font-bold text-2xl lg:text-4xl px-2 lg:px-4 py-2 md:py-4">
           Skills...
