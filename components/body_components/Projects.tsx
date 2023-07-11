@@ -13,8 +13,8 @@ const CppProject: Project[] = [
     name: "Fastest Path Finder",
     date: "April 2022",
     description: [
-      "Given the dimesion and the values of each cell in a grid, reconstructed the path for with a graph structure.",
-      "This program went through the the grid from top row to bottom row and found the shortest time for each entry to reach the bottom row.",
+      "Given the dimension and the values of each cell in a grid, reconstructed the path for with a graph structure.",
+      "This program went through the grid from the top row to the bottom row and found the shortest time for each entry to reach the bottom row.",
       "Among all the paths, the program found the path with the shortest time to exit the grid.",
     ],
   },
@@ -23,7 +23,7 @@ const CppProject: Project[] = [
     date: "February 2022",
     description: [
       "Provide the Huffman encoded file, the program decoded the file and rebuilt the Huffman tree.",
-      "Decoded the Huffman tree and turn the encoded file into human readable text.",
+      "Decoded the Huffman tree and turn the encoded file into human-readable text.",
     ],
   },
   {
@@ -41,7 +41,7 @@ const PythonProject: Project[] = [
     name: "Relationship Between Student Behaviors and Performance",
     date: "April 2022",
     description: [
-      "Used KNN clustering to find out the behaviors(attendence, hours of study, etc) that have the most impact on student performance on exams.",
+      "Used KNN clustering to find out the behaviors(attendance, hours of study, etc) that have the most impact on student performance on exams.",
     ],
   },
 ];
@@ -60,8 +60,8 @@ const TypescriptProject: Project[] = [
     ],
   },
   {
-    name: "Trading Journel Website",
-    date: "Juanuary 2023",
+    name: "Trading Journal Website",
+    date: "January 2023",
     description: [
       "Built a website for recording my trading ideas and mistakes.",
       "Tools used: React.js, Next.js, Tailwind CSS, Framer Motion, Next Auth, Prisma, PostgreSQL, and Vercel.",
