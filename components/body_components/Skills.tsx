@@ -48,20 +48,28 @@ const Languages: Skill[] = [
 
 const Frameworks: Skill[] = [
   {
+    skill: "React.js",
+    fluency: 70,
+  },
+  {
+    skill: "Prisma",
+    fluency: 70,
+  },
+  {
+    skill: "Next.js",
+    fluency: 70,
+  },
+  {
+    skill: "Trpc",
+    fluency: 50,
+  },
+    {
     skill: "Node.js",
     fluency: 50,
   },
   {
     skill: "Express.js",
     fluency: 50,
-  },
-  {
-    skill: "React.js",
-    fluency: 70,
-  },
-  {
-    skill: "Next.js",
-    fluency: 70,
   },
   {
     skill: "Tailwind CSS",
@@ -73,7 +81,7 @@ const Frameworks: Skill[] = [
   },
   {
     skill: "Astro",
-    fluency: 20,
+    fluency: 40,
   },
   {
     skill: "Svelte",
