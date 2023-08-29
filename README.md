@@ -71,13 +71,13 @@ To run this website locally on your machine, follow these steps:
 
 [Simple Assembly Decoder](https://github.com/SeanoChang/ece39595_project) - Provided a simple assembly code (within 50 lines), the program parsed the code and generated the corresponding machine code with the help of a symbol table, instruction buffer, and string buffer. The virtual machine in the program reads the machine code and executes the code.
 
-## Half-Built and Currently Building
+## Currently Building
 
 ### Full Stack Projects
 
-[Trading Journal](https://trading-journal-page-3q7d.vercel.app/) - [Github page](https://github.com/SeanoChang/trading_journal_page)
+[Trading Journal](https://trading-journal-page-3q7d.vercel.app/) - My personal trading journey. Explore, analyze, and share trading insights with friends through a seamless platform powered by Next.js and Prisma. [Github page](https://github.com/SeanoChang/trading_journal_page)
 
-[Trading Community](#) - [Github page](https://github.com/SeanoChang/trading_community)
+[Trading Community](#) - Trading Community is a dynamic platform that brings traders together to share insights, collaborate on ideas, and engage in meaningful discussions. Seamlessly blending user authentication, real-time data, and interactive features, it's a hub where traders connect to build a stronger and informed trading community. [Github page](https://github.com/SeanoChang/trading_community)
 
 ## Deployment
 
